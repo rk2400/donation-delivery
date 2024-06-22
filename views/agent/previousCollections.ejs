@@ -24,7 +24,9 @@
 						<tr>
 							<th scope="row"> <%= i+1 %> </th>
 							<td> <%= previousCollections[i].donor.firstName + " " + previousCollections[i].donor.lastName %> </td>
-							<td> <%= previousCollections[i].address %> </td>
+							<td><a href="https://www.google.com/maps/search/?api=1&query=<%= previousCollections[i].address %>" target="_blank">
+								 <%= previousCollections[i].address %></a>
+								 </td>
 							<td> <%= previousCollections[i].phone %> </td>
 							<td><a href="/agent/collection/view/<%= previousCollections[i]._id %>" class="btn">View</a></td>
 						</tr>
