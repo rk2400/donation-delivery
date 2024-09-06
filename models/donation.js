@@ -3,12 +3,12 @@ const mongoose = require("mongoose");
 const donationSchema = new mongoose.Schema({
 	donor: {
 		type: mongoose.Schema.Types.ObjectId,
-		ref: "participant",
+		ref: "participants",
 		required: true
 	},
 	agent: {
 		type: mongoose.Schema.Types.ObjectId,
-		ref: "participant",
+		ref: "participants",
 	},
 	foodType: {
 		type: String,
